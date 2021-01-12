@@ -94,7 +94,7 @@ export default class RightSectionList extends Component {
         /> :
         <View
           style={styles.item}>
-          <Text style={[textStyle, this.props.fontStyle]}>{title}</Text>
+          <Text style={[textStyle, this.props.fontStyle, this.props.style]}>{title}</Text>
         </View>;
 
         return (
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    padding: 0
+    padding: 4
   },
 
   text: {
